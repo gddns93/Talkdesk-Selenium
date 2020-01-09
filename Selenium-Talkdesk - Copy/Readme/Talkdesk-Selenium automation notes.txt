@@ -1,0 +1,55 @@
+install Selenium
+
+
+
+from selenium import webdriver #import selenium library
+
+from selenium.webdriver.common.keys import Keys #import keys library
+
+browser = webdriver.Chrome('C:\\Users\Griffin\Pycharm-Python-Projects\chromedriver.exe') #sets browser type
+
+browser.get('https://better.mytalkdesk.com/#admin/agents/new') #Opens specified website
+
+browser.find** (Finds elements on web page)
+
+How to save webpage element to a variable
+
+variable = browser.find
+
+can then call functions on the variable ie variable.click to click a button 
+
+usefull functions
+
+variable.click #click button)
+
+variable.send_keys('text here') Adds text to texbox
+----- ID's
+
+Save button
+
+<selenium.webdriver.remote.webelement.WebElement (session="6f5158f0ece38a39296f2bcf27e0dd47", element="d5fcc24a-5d4b-4148-9dd5-60610ade6591")>
+
+Name Field
+
+<selenium.webdriver.remote.webelement.WebElement (session="6f5158f0ece38a39296f2bcf27e0dd47", element="373b4b15-900a-4422-929f-120ce5e1c84e")>
+
+Email field 
+
+<selenium.webdriver.remote.webelement.WebElement (session="6f5158f0ece38a39296f2bcf27e0dd47", element="babd3b6f-6b1e-43a2-8ce5-f3e7615c380a")>
+
+Ringgroup
+
+browser.find_element_by_name('tags')
+----------------
+
+Psudeocode
+
+elem_name.send_keys("Charles Xavier")
+
+elem_email.send_keys("cxavier@better.com")
+
+elem_ringgroups.send_keys("Charles Xavier") 
+
+elem_ringgroup.send_keys(Keys.ENTER)
+
+elem_save.click
